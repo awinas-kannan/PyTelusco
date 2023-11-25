@@ -220,11 +220,67 @@ ironpython ( C# version of python)
 
 
 ############################ DJANGO UnCHained
+##1 Django
+
+The django - 
+Django is based on MVT(Model View Template architecture) which is based on the MVC(Model View Controller architecture). The common difference between them is that Django take care of controller part.
+
+Why Django :
+ -> Has lot of components
+ -> Security
+ -> Scalable
+ -> 
+
+ ##2 Django - Setup
+ pip3 install virtualenv
+ pip3 show virtualenv
+
+ Below two steps are not required..when creating proj with Pycharm
+ pip3 install virtualenv
+ pip3 install virtualenvwrapper
+ pip3 install virtualenvwrapper-win
+ pip3 show virtualenv
+ mkvirtualenv test
+
+pip install django
+django-admin --version 
+django-admin startproject DjangoUnchained
+python manage.py runserver
+
+http://localhost:8000/
+http://127.0.0.1:8000/
+
+wsgi -> used to deploy project on prod server
+urls -> Cuz its web app
+manage.py 
+setting.py
+Refer ###### Virtual Environment
+
+Steps :
+pip3 show virtualenv
+
+
+ -> pip3 install virtualenvwrapper-win
 
 
 
+##3 First App in Django
+
+Visual Studio Code...
+
+Project vs APP
+
+Project Ecomm Site
+ APP:
+  -> Login
+  -> Products
+  -> Orders
+  -> Checkout
+  -> Shipping
 
 
+How to use already exiting Virtual env ?
+workon <ENV_NAME>
 
 
 ######
@@ -240,7 +296,6 @@ We use the “wildcard” or “*” notation like this – *args OR **kwargs �
 
 The special syntax **kwargs in function definitions in Python is used to pass a keyworded, variable-length argument list. We use the name kwargs with the double star. The reason is that the double star allows us to pass through keyword arguments (and any number of them).
 
-Using *args and **kwargs in Python to set values of object
 *args receives arguments as a tuple.
 **kwargs receives arguments as a dictionary.
 
@@ -248,7 +303,49 @@ https://github.com/onlyphantom/llm-python
 
 
 
+###### Virtual Environment
+Recommedation : new virtual environmnet for each project...
+
+https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
+
+venv (for Python 3) allows you to manage separate package installations for different projects. It creates a “virtual” isolated Python installation. When you switch projects, you can create a new virtual environment which is isolated from other virtual environments. You benefit from the virtual environment since packages can be installed confidently and will not interfere with another project’s environment.
+
+It is recommended to use a virtual environment when working with third party packages.Using *args and **kwargs in Python to set values of object
+
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+
 
 %%%%
 https://www.coursera.org/learn/python-project-for-ai-application-development#outcomes
 %%%%
+
+Setup :
+
+Nano ~/.zshrc
+export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.12/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/Library/Frameworks/Python.framework/Versions/3.12/bin/virtualenv
+export PATH=$PATH:${VIRTUALENVWRAPPER_VIRTUALENV}
+source /Library/Frameworks/Python.framework/Versions/3.12/bin/virtualenvwrapper.sh
+source ~/.zshrc
+
+https://stackoverflow.com/questions/34611394/virtualenv-workon-command-not-found
+https://stackoverflow.com/questions/49470367/install-virtualenv-and-virtualenvwrapper-on-macos
+https://stackoverflow.com/questions/31274642/error-virtualenvwrapper-could-not-find-virtualenv-in-your-path
+
+Py Commands:
+
+which virtualenv
+which python3
+pip3 install virtualenv
+pip3 install virtualenvwrapper
+pip3 install virtualenvwrapper-win
+pip3 show virtualenv
+lsvirtualenv -> List all virtual envs
+mkvirtualenv test
+workon test
+deactivate
+rmvirtualenv test
