@@ -1,0 +1,250 @@
+Py - Telusco
+
+Any Py Files is module ?
+
+
+### 46 & 47
+
+Special Variable :
+ -> __NAME__
+
+What ever is start point file in PY.. it will print __main__ when __name__ is called..
+
+If some other module is imported into other module... it will print the module's name...
+
+Once a module is imported.. everything will be executed in that module..
+
+
+
+### 48/49 - OOPs!!!!!
+
+   Py Supports OOP
+   Functional Programming
+   Procedure oriented Programming
+
+Class & Object
+
+
+
+Class :
+  Attributes (properties)
+  Behaviours (functions/methods)
+print(type(c1)) -> <class '__main__.computer'>  
+  
+How to call method :
+
+c1 = computer()
+c1.config()
+
+computer.config(c1)
+
+ ### 50 __init__ method
+
+  Used while instantiating an object..
+
+### 51 Constructor ,Self ,Comparing Objects
+  
+Heap -> All objects
+c1 = computer()
+c2 = computer()
+print(id(c1))
+print(id(c2))
+
+self in py == this in java
+
+
+### 52 Types of Variable..
+
+Class Variable..
+Instance Variable..
+(Check the course era example)
+
+Class namespace vs Instnce namespace:
+Class ns : place whr class variables are stored
+Int ns : place whr instance vars are stored
+
+
+### 53 Types of methods
+Instance method
+Class methods
+Static methods
+
+cls vs self..
+when working with class attrs use cls
+  cls.ATTRIBUTE_NAME
+
+Use @classmethod for class methods
+
+static variabe=le :
+ ->Not concerned abt class & instance variables
+ ->Dont use self/cls in methond
+ ->@staticmethod
+
+### 54 Inner class
+
+InnerClass.py
+
+### 55 Inheritance
+
+Class A:
+Class B(A):
+Class C:
+Class D(B,C):
+
+singel/multi level/multiple
+
+### 56 Constructor Inheritance
+
+How Constructo behaved in Inheritance::
+
+In Single level inheritace... 
+  When super.__init is used
+  Consuructor of Super clas will be called when creating object of sub class
+
+  If B extends A .. And b has constructor..
+  then when creating object of B.. Consturctor of A will not be called
+
+  If B extends A .. And b has NO constructor..
+  then when creating object of B.. Consturctor of A will be called
+
+MRO -> Method resolution order:
+used in Multiple inheriance..
+Then Once menthioned first in the bracket will have high priority
+
+Class C(A,B):
+
+
+### 57 Polymorphism
+
+One name many forms..
+1)Duck Typying
+2)Operator Overloading
+3)Method overloading
+4)Method overriding..
+
+### 58 Duck Typying
+  -> Behaviour that matached with duck..
+  -> 
+
+x = 10
+x = 'Awians'
+
+int memorry is assigned with anme x
+then string memory is assigned with name x
+
+Unlike other programming languages , we aint mentioning The TYPE in methods...
+
+Ref DuckTyping.py//
+ -> ide is duck typed there..
+  -> Its enough if the execure method is presnet on your IDE...
+
+If its java.. then we will create interface . then we will implement it in Pycharm & Juniper... then only we will be able to use the exec method..
+
+
+### 59 Operator Overloading
+
+override __add__ ,__gt__ , __str
+
+## 60  Method overloading & overriding...
+
+Method overloading cant be done direcly - cus it doesnt support in python
+
+https://www.geeksforgeeks.org/python-method-overloading/
+
+Multiple dispatch decorator
+
+
+** 61 Abstract Classes
+
+Use pass keywords to say i d have anything...
+from abc import ABC,abstractmethod
+
+
+## 61 Iterator
+for loop interannly uses __next__ function
+To implement your own iter
+ -> ADD __iter__ (Gives u the obj of iterator)
+ -> ADD __next__
+
+
+## 62 Generator
+yield keyword makes your function a generator
+Generatro gives us iterators
+
+## 63 Exception Handling
+Check Coursera Repo..
+
+## 64 Multi threading
+from threading import *
+from time import  sleep
+Main thread..
+t1 thread
+t2 thread..
+
+bye will be printed cuz its in main thread..
+start () will internally call run
+
+join()..
+
+## 65 File Handling
+Check Coursera repo
+rb -> read binary ( for images)
+
+## 66 Comments
+
+#  -> Single line commnet
+
+Use the below for documentation
+""" 
+awinas 
+"""
+
+## 67 Is Python Compuled or Interpreted lang
+
+Its both compiled & interpreted language...
+
+Source code -> compiler -> byte code -> interpreter (Python Virtual Machine)-> Machine Language
+
+PVM -> Python Virtual Machine
+JVM -> Java Virtual Machine
+
+cpython ( py implementd in c)
+jython (java version of python)
+ironpython ( C# version of python)
+
+
+## Algorithms 
+
+## 68 Linear search # 69 Binary serach #70 Bubble Sort #71 Selection sort 
+
+
+
+
+
+
+
+
+
+######
+args and kwargs examples in Python.
+
+https://www.geeksforgeeks.org/args-kwargs-python/
+
+*args (Non-Keyword Arguments)
+**kwargs (Keyword Arguments)
+
+We use the “wildcard” or “*” notation like this – *args OR **kwargs – as our function’s argument when we have doubts about the number of  arguments we should pass in a function.” 
+
+
+The special syntax **kwargs in function definitions in Python is used to pass a keyworded, variable-length argument list. We use the name kwargs with the double star. The reason is that the double star allows us to pass through keyword arguments (and any number of them).
+
+Using *args and **kwargs in Python to set values of object
+*args receives arguments as a tuple.
+**kwargs receives arguments as a dictionary.
+
+https://github.com/onlyphantom/llm-python
+
+
+
+
+
