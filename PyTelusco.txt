@@ -219,6 +219,8 @@ ironpython ( C# version of python)
 
 
 
+############################ DJANGO UnCHained
+
 
 
 
@@ -247,4 +249,6 @@ https://github.com/onlyphantom/llm-python
 
 
 
-
+%%%%
+https://www.coursera.org/learn/python-project-for-ai-application-development#outcomes
+%%%%
