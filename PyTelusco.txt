@@ -331,6 +331,14 @@ Model -- Model
 View -- Controllee
 Template -- View
 
+class Destination:
+ id : int
+ name : str
+ img :  str
+ desc : str
+ price : int
+ offer : bool
+
 #10 Django tutorials | Static Files - 1
 Download template from internet
 travellor colorlib
@@ -352,8 +360,58 @@ python3 manage.py collectstatic
 Used OOPS to pass the Dynamic Data...
 
 #13 Django tutorials | Passing Dynamic Data in Html - part 2
+#14 Django tutorials | If Statement
+
+#15 Django tutorials | ORM | Object Relational Mapper | Theory
+
+#16 Django tutorials | Postgres and PgAdmin Setup
+
+#17 Django tutorials | Models and Migrations
+
+Modify db setting ins Setting.py
 
 
+$$$ Refer Django Model Field (ref django docs)
+
+Connecting to DB
+
+class Destination(models.model):
+ name = models.CharField(max_length =100)
+ img =  models.ImageField(uploadTo = 'pics')
+ desc = models.textField()
+ price = models.IntegerField()
+ offer = models.BooleanField(default = False)
+
+Migrate Models to DB::
+python3 manage.py makemigration
+python3 manage.py sqlmigrate travello 0001
+python3 manage.py migrate
+
+INSTALLED_APPS = [
+travello.apps.TravelloConfig
+]
+
+#18 Django tutorials | Re-Migration
+
+#19 Django tutorials | Admin Panel
+
+# Register your models here.
+
+admin.site.register(Destination)
+python3 manage.py help
+python3 manage.py createsuperuser
+Username: kiran
+Email address : connect@telusko.com
+Password: 1234
+Password (again): 1234
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+#20 Django tutorials | Add and Fetch data from Database
+
+Destination.objects.all()
+
+#21 Django tutorials | User Registration - 1
 
 
 ######
@@ -433,4 +491,19 @@ django-admin startproject DjangoUnchained
 python manage.py runserver
 python3 manage.py startapp calc
 
+
+Move staic files::
 python3 manage.py collectstatic
+
+
+Migrate Models to DB::
+python3 manage.py makemigration
+python3 manage.py sqlmigrate travello 0001
+python3 manage.py migrate
+
+
+python3 manage.py help
+python3 manage.py createsuperuser
+
+a0m0rtj
+1234
