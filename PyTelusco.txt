@@ -314,8 +314,48 @@ jinja extension
 #6 Django tutorials | Django Template Language - part 2
 NR
 
+#7 Django tutorials | Addition of Two Numbers in Django
 
- 
+#8 Django tutorials | GET vs POST | HTTP Methods
+
+POST:
+Reason given for failure:
+CSRF token missing.
+settings.py -> miffleware -> csrf already present
+
+#9 Django tutorials | Model View Template in Django | MVT
+
+seperation of concern
+mvt vs mvc
+Model -- Model
+View -- Controllee
+Template -- View
+
+#10 Django tutorials | Static Files - 1
+Download template from internet
+travellor colorlib
+
+#11 Django tutorials | Static Files - 2
+
+Put the js / images  /css cntents on static folder...
+check STATIC_URL IN setting.py
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, '/static')
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+
+python3 manage.py collectstatic
+
+#12 Django tutorials | Passing Dynamic Data in Html part 1
+
+Used OOPS to pass the Dynamic Data...
+
+#13 Django tutorials | Passing Dynamic Data in Html - part 2
+
+
+
+
 ######
 args and kwargs examples in Python.
 
@@ -393,3 +433,4 @@ django-admin startproject DjangoUnchained
 python manage.py runserver
 python3 manage.py startapp calc
 
+python3 manage.py collectstatic
