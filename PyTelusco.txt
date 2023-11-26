@@ -1,5 +1,7 @@
 Py - Telusco
 
+https://github.com/navinreddy20/Python-
+
 Any Py Files is module ?
 
 
@@ -239,9 +241,9 @@ Why Django :
  pip3 install virtualenv
  pip3 install virtualenvwrapper
  pip3 install virtualenvwrapper-win
- pip3 show virtualenv
- mkvirtualenv test
 
+pip3 show virtualenv
+mkvirtualenv test
 pip install django
 django-admin --version 
 django-admin startproject DjangoUnchained
@@ -282,7 +284,38 @@ Project Ecomm Site
 How to use already exiting Virtual env ?
 workon <ENV_NAME>
 
+Creating APP : python3 manage.py startapp calc
 
+admin.py 
+apps.py
+models.py (Used while working with ORM)
+views.py
+
+####### 4 First APP Django -2
+
+
+How Django works ?
+ -> Search for URL mapping
+  urls.py
+  views.py  
+
+######## 5 Django tutorials | Django Template Language | DTL
+
+import od in settings..
+
+IN Settings.py file 
+ -> TEMPLATES =[
+    'DIRS' : [os.path.join(BASE_DIR,'templates')]
+   ]
+
+jinja extension
+
+
+#6 Django tutorials | Django Template Language - part 2
+NR
+
+
+ 
 ######
 args and kwargs examples in Python.
 
@@ -338,6 +371,9 @@ https://stackoverflow.com/questions/31274642/error-virtualenvwrapper-could-not-f
 
 Py Commands:
 
+python3 --version
+pip3 --version
+pip3 install --upgrade pip   
 which virtualenv
 which python3
 pip3 install virtualenv
@@ -349,3 +385,11 @@ mkvirtualenv test
 workon test
 deactivate
 rmvirtualenv test
+
+workon <ENV_NAME>
+
+django-admin --version 
+django-admin startproject DjangoUnchained
+python manage.py runserver
+python3 manage.py startapp calc
+
