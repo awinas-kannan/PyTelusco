@@ -452,6 +452,7 @@ source .venv/bin/activate
 
 %%%%
 https://www.coursera.org/learn/python-project-for-ai-application-development#outcomes
+https://betterstack.com/community/questions/what-are-differences-between-python-virtual-environments/
 %%%%
 
 Setup :
@@ -587,6 +588,73 @@ Virtualenv location: /Users/a0m0rtj/.virtualenvs/DjangoMosh-I24ITtZt
  
  Django Install toolbar:
  https://django-debug-toolbar.readthedocs.io/en/latest/
-pip install django-debug-toolbar
+ 
+ pip install django-debug-toolbar
+
+ toolbar occurs oly if we return proper html doc
+
+ Models:
+ Building an E-Commerce Data Model 
+ Product
+  titile
+  desc
+  price
+  inventorty
+
+ Collection
+  title
+
+ Collection can have multiple prods
+   
   
+
+--------------------------------------------------------------------------------------------------------------------
+PIP CONFIG:
+pip config list -v
+pip3 config debug
+
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+
+To Do :
+ -> Python  + rest API
+ -> Python + DB Connection
+ -> Python + Gen AI
+ -> 
+
+
+Python + rest :
+ https://radixweb.com/blog/create-rest-api-using-django-rest-framework
+
+ pip install django_rest_framework
+ INSTALLED_APPS -> rest_framework
+
+
+
+
+------------------------------------------------FLASK----------------------------------------------------------
+pip3 install flask
+flask --help     
+ENV FLASK_APP=Hey.py
+
+Two Ways to Run Flask APP :
+ -> Env Variable
+ -> Run method
+
+(PyFlaskTP) a0m0rtj@m-c02f6062ml87 PyFlaskTP % export FLASK_APP=Hey.py
+(PyFlaskTP) a0m0rtj@m-c02f6062ml87 PyFlaskTP % flask run  
+
+Debugging :
+ make debug = true in run method
+ reloader module will restart as soon we make any chnages in source  code...
+
+https://www.tutorialspoint.com/flask/index.htm
+https://www.youtube.com/watch?v=jx5SlRi28DE&list=PLMOobVGrchXN5tKYdyx-d2OwwgxJuqDVH&index=3
+
+
+
+
+
+
+
 
